@@ -1,0 +1,32 @@
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-block-start: 5rem;
+}
+
+.loading img {
+  animation: loading infinite 1s alternate-reverse;
+}
+
+.loading h2 {
+  font-size: 3rem;
+  animation: letra infinite 1s alternate-reverse;
+}
+
+@keyframes letra {
+  from {
+    transform: translateX(0px);
+  } to {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes loading {
+  from {
+    transform: translateY(0);
+  } to {
+    transform: translateY(-10px);
+  }
+}

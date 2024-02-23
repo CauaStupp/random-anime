@@ -1,0 +1,128 @@
+.content {
+  margin: 5rem 0;
+  padding: 0 90px;
+}
+
+.content h2 {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.animes {
+  display: flex;
+  background-color: #333333;
+  border-radius: 5px;
+}
+
+.animes:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.image img {
+  width: 300px;
+  height: 100%;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.title h3 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.title p {
+  font-size: 1rem;
+  line-height: 1.4rem;
+  color: #888;
+}
+
+.animeInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+.infos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infos p {
+  color: #666666;
+}
+
+.producers {
+  display: flex;
+  gap: 8px;
+}
+
+.producers span {
+  padding: 5px 10px;
+  border: 2px solid var(--purple);
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+
+
+.notFound {
+  width: 100%;
+
+  height: 50vh;
+  padding: 0px 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notFoundArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border-radius: 5px;
+  color: #666666;
+}
+
+.notFoundArea p {
+  margin-top: 8px;
+}
+
+.notFound button {
+  margin-top: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #666666;
+  color: #343434;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.notFound button:hover {
+  background-color: #888;
+  color: #666666;
+}
+
+.notFoundArea::before {
+  content: '';
+  background-color: #333333ca;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 5px;
+  filter: blur(10px);
+}
+
+.notFoundArea svg {
+  font-size: 100px;
+}

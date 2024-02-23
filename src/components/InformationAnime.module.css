@@ -1,0 +1,33 @@
+.content {
+  width: 100%;
+  min-height: 324px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  gap: 1rem;
+}
+
+.content > div span {
+  background: var(--black-80, #333);
+  border-radius: 5px;
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  color: var(--black-40, #999);
+}
+
+.content > div p {
+  border-radius: 5px;
+  font-size: 0.9rem;
+  background: var(--purple-70, #9675CD);
+  color: var(--purple-45, #DDD2EF);
+  padding: 5px 10px;
+  white-space: nowrap;
+}
